@@ -77,11 +77,6 @@ Modelin performans sonuçları aşağıdaki gibidir:
 - **F1 Score**: 0.9347
 - **Recall Score**: 0.8783
 - **ROC AUC Score**: 0.8281
-- **Confusion Matrix**:
-      |  | 0 | 1 |
-      | --- | --- | --- |
-      | 0 | 7 | 2 |
-      | 1 | 219 | 1581 |
 - **Balanced Accuracy Score**: 0.8281
 
 ## Yazar
