@@ -63,6 +63,27 @@ Bu komut, "Makine_verileri.xlsx" dosyasını kullanarak veri işleme ve model de
 9. Modelin yüklenmesi (`load_model`)
 10. Modelin değerlendirilmesi (`evaluate_model`)
 
+## Model Çıktıları
+
+Bu projede, tahmin edilen sınıflar aşağıdaki gibi yorumlanır:
+
+- **0**: Arıza durumu
+- **1**: Arıza olmama durumu
+
+## Sonuçlar
+
+Modelin performans sonuçları aşağıdaki gibidir:
+
+- **F1 Score**: 0.9347
+- **Recall Score**: 0.8783
+- **ROC AUC Score**: 0.8281
+- **Confusion Matrix**:
+      |  | 0 | 1 |
+      | --- | --- | --- |
+      | 0 | 7 | 2 |
+      | 1 | 219 | 1581 |
+- **Balanced Accuracy Score**: 0.8281
+
 ## Yazar
 
 - **Eren Coşkun**
