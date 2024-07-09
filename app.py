@@ -11,13 +11,15 @@ class App():
         self.main.change_column_type()
         self.main.encoding()
         self.main.split_date()
+        self.main.create_time_window_features()
         self.main.cap_numerical_outliers_IQR()
         self.main.scaled_data()
-        self.main.create_time_window_features()
         self.main.split_data()
         self.main.apply_pca()
         self.main.load_model()
         self.main.evaluate_model()
+        
+        
         
 
 if __name__ == "__main__":

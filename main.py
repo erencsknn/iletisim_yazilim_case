@@ -116,7 +116,7 @@ class Main():
         self.X, self.y = random_under_sampler.fit_resample(self.X, self.y)
         # Train-test split
         self.X_train, self.X_test, self.y_train, self.y_test = train_test_split(
-            self.X, self.y, test_size=0.3, stratify=self.y, random_state=13, shuffle=True
+            self.X, self.y, test_size=0.3, stratify=self.y, random_state=11, shuffle=True
         )
         # SMOTE
         smote_k_neighbors = min(2, len(self.y_train[self.y_train == 1]) - 1)
@@ -209,11 +209,11 @@ class Main():
         
 
     def model_save(self):
-        model.dump(self.model, 'model.pkl')
+        model.dump(self.model, 'last_model.pkl')
 
     
     def load_model(self):
-        self.model = model.load('model.pkl')
+        self.model = model.load('last_model.pkl')
 
 
 
